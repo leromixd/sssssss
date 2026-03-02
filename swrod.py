@@ -7,7 +7,7 @@ root.geometry("800x600")
 
 overlay_text = tk.StringVar()
 color_text = tk.StringVar()
-font_size = tk.IntVar(value=14)  # базовый размер 14
+font_size = tk.IntVar(value=18)  # базовый размер 14
 
 overlay_text.set("Пример текста\nМного строк\nДля оверлея")
 color_text.set("cyan")  # по умолчанию
@@ -54,7 +54,7 @@ canvas = tk.Canvas(overlay, width=1600, height=800, bg='black', highlightthickne
 canvas.pack()
 
 # Создаем текст на Canvas с переносом
-display_text = canvas.create_text(10, 10, anchor='nw', text=overlay_text.get(), fill=color_text.get(), font=('Arial', 14), width=600)
+display_text = canvas.create_text(10, 10, anchor='nw', text=overlay_text.get(), fill=color_text.get(), font=('Arial', 18), width=600)
 
 def periodic_update():
     refresh_overlay_text()
@@ -109,7 +109,7 @@ size_label = tk.Label(root, text="Размер текста")
 size_label.pack()
 
 size_slider = tk.Scale(root, from_=8, to=30, orient='horizontal', variable=font_size, command=on_size_change)
-size_slider.set(14)
+size_slider.set(18)
 size_slider.pack()
 
 def on_text_change(event):

@@ -109,7 +109,7 @@ size_label = tk.Label(root, text="Размер текста")
 size_label.pack()
 
 size_slider = tk.Scale(root, from_=8, to=30, orient='horizontal', variable=font_size, command=on_size_change)
-size_slider.set(18)
+size_slider.set(14)
 size_slider.pack()
 
 def on_text_change(event):
@@ -119,3 +119,4 @@ text_entry.bind("<KeyRelease>", on_text_change)
 
 # Запуск
 root.mainloop()
+

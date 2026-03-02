@@ -7,7 +7,7 @@ root.geometry("800x600")
 
 overlay_text = tk.StringVar()
 color_text = tk.StringVar()
-font_size = tk.IntVar(value=18)  # базовый размер 14
+font_size = tk.IntVar(value=14)  # базовый размер 14
 
 overlay_text.set("Пример текста\nМного строк\nДля оверлея")
 color_text.set("cyan")  # по умолчанию
@@ -119,4 +119,5 @@ text_entry.bind("<KeyRelease>", on_text_change)
 
 # Запуск
 root.mainloop()
+
 

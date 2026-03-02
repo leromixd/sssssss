@@ -54,7 +54,7 @@ canvas = tk.Canvas(overlay, width=1600, height=800, bg='black', highlightthickne
 canvas.pack()
 
 # Создаем текст на Canvas с переносом
-display_text = canvas.create_text(10, 10, anchor='nw', text=overlay_text.get(), fill=color_text.get(), font=('Arial', 14), width=600)
+display_text = canvas.create_text(10, 10, anchor='nw', text=overlay_text.get(), fill=color_text.get(), font=('Arial', 18), width=600)
 
 def periodic_update():
     refresh_overlay_text()
@@ -119,6 +119,7 @@ text_entry.bind("<KeyRelease>", on_text_change)
 
 # Запуск
 root.mainloop()
+
 
 
 
